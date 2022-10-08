@@ -8,13 +8,14 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <h1>Welcome The System</h1>
     <div>
         <?php
             session_start();
             if(isset($_SESSION["usuario"])){
-                echo("<h3>welcome<h3>".$_SESSION["usuario"]);
+                echo("welcome ".$_SESSION["usuario"]);
         ?>
-                <a href="logout.php">logout</a>
+                <a href="/logout.php">logout</a>
         <?php
             }
         ?>
